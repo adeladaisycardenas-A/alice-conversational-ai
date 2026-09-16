@@ -1,79 +1,62 @@
-# Alice — Relational Conversational AI Companion
 
-**Independent conversational AI project exploring relational continuity, adaptive communication, persistent identity, user-governed memory, and emotionally supportive conversation across devices and language models.**
+# Alice — Conversational AI Companion
 
-> **Status:** Active prototype / ongoing independent project  
+**An independent conversational AI prototype exploring relational communication, persistent identity, user-governed memory, model independence, and continuity across devices.**
+
+> **Status:** Active prototype / independent research project  
 > **Developer:** Daisy Cardenas
 
 ---
 
-## The Idea Behind Alice
+<p align="center">
+  <img src="assets/alice-original-concept.png" alt="Original Alice interface concept" width="800">
+</p>
 
-Alice began as more than an interface for talking to a language model.
-
-The project explores whether a conversational AI can develop **relational continuity with a user over time** — preserving not only factual context, but patterns in communication, prior conversations, preferences, boundaries, and the context needed to respond to the person more consistently.
-
-This led to a larger question:
-
-**Can the continuity of an AI relationship belong to the application itself rather than disappearing when the conversation, device, or underlying language model changes?**
-
-Alice became an experiment in separating several systems that are often treated as one:
-
-**Language Model → Alice Identity → Memory → Relational Context → Permissions → User Experience**
-
-The language model generates language.
-
-Alice is the larger system designed around it.
+<p align="center">
+  <em>Original Alice interface concept — preserved as design history, not presented as a working-product screenshot.</em>
+</p>
 
 ---
 
-## Relational Conversational AI
+## The Idea
 
-A central part of the project is exploring the difference between an AI that simply **remembers information** and one that can use prior context to communicate more effectively over time.
+Alice began with a question:
 
-Experiments have included:
+**What if the identity of a conversational AI belonged to the application rather than whichever language model happened to be running underneath it?**
 
-- Maintaining continuity across complex conversations
-- Recognizing recurring communication patterns
-- Adapting conversational style using prior context
-- Reflective and emotionally supportive dialogue
-- Tracking context across separate interactions
-- Distinguishing remembered information from unsupported inference
-- Testing when personalization improves a response — and when it goes too far
-- Preserving user control over memory and behavioral adaptation
+But the project quickly became about more than technical persistence.
 
-This work also raised an important design problem:
+I wanted to explore whether an AI could know someone over time while still preserving uncertainty, accepting correction, avoiding unsupported assumptions, and allowing the person themselves to remain in control of what Alice believes she knows.
 
-**How can a conversational system become more relational without silently deciding who the user is?**
-
-That question shaped Alice's memory, permission, provenance, and behavioral-testing work.
+That created both a relational problem and an engineering problem.
 
 ---
 
-## Supportive & Therapy-Like Conversation
+## 01 — Original Vision
 
-Alice has also been used experimentally for reflective, emotionally supportive, and therapy-like conversations.
+The earliest Alice interface concept centered around a glowing, neural, brain-like presence rather than a traditional chatbot interface.
 
-The goal is **not to present Alice as a therapist or medical system**.
+The original design explored:
 
-Instead, these experiments examine how conversational AI behaves when discussions depend heavily on emotional context, continuity, trust, communication history, and careful interpretation.
+- A neural-style Alice orb
+- Chat
+- Voice
+- Camera
+- Tools
+- Listening
+- Multiple visual themes
+- Permissions and privacy controls
+- One consistent Alice identity across devices
 
-These conversations became useful tests for:
+**Design principle:**
 
-- Context sensitivity
-- Reflective communication
-- Long-term conversational continuity
-- Misinterpretation and over-inference
-- Appropriate uncertainty
-- Boundary handling
-- Behavioral consistency
-- Recovery after conversational failures
+> *Same mind. Different places. Always with you.*
 
-They also exposed failures that ordinary question-and-answer testing may not reveal.
+The original artwork above is preserved as part of the project's design history and is intentionally distinguished from screenshots of working prototypes.
 
 ---
 
-## From Idea to Prototype
+## 02 — From Idea to Prototype
 
 The relational goal created technical requirements.
 
@@ -81,255 +64,376 @@ If Alice was going to maintain continuity while models, conversations, and devic
 
 That led to experiments involving:
 
-- Model-independent identity
+- Swift and SwiftUI
+- Python
+- Local language models
 - Persistent application state
 - User-governed memory
-- Local language models
 - Voice interaction
 - Privacy and permissions
 - Cross-device communication
 - Behavioral testing and evaluation
 
 The architecture therefore grew **from the relational problem**, rather than being the purpose of Alice by itself.
----
-
-## 01 — Original Vision
-
-Before Alice became a working prototype, the idea was explored visually.
-
-The earliest design centered Alice around a glowing, neural, brain-like presence rather than a traditional chatbot interface.
-
-The original interface concept included:
-
-- A neural-style Alice orb
-- Chat, Voice, Camera, and More
-- A dedicated listening interface
-- Tools and permissions
-- Multiple visual themes
-- A consistent identity across devices
-
-**“Same mind. Different places. Always with you.”**
-
-These early visuals are preserved as **concept designs** and are intentionally distinguished from screenshots of the working prototype.
-
-### Original Alice Concept
-
-![Original Alice relational AI interface concept](04ABCDA7-71C1-455B-8501-E6E7B297782F.png)
-
-*Original Alice concept artwork — early visual exploration of Alice's neural presence, conversational interface, tools, voice interaction, customizable themes, and cross-device identity.*
-
-## 02 — From Concept to Working Prototype
-
-The visual concept eventually became a functional SwiftUI project.
-
-Alice development included experiments with:
-
-- Swift
-- SwiftUI
-- Xcode
-- AVFoundation
-- Local language models through LM Studio
-- Persistent application state
-- CloudKit
-- Voice interaction
-- Memory architecture
-- iOS and macOS companion experiences
-- Local-network communication
-
-The underlying language model was designed to be replaceable.
-
-The larger goal was to preserve **Alice's identity, memory system, permissions, and relational context independently of the model generating each response.**
 
 ---
 
-## 03 — Pocket Alice
+## 03 — Development Timeline
 
-The mobile prototype explored what it would mean for the same conversational system to move between a Mac and an iPhone.
+Alice developed incrementally through a series of prototypes and experiments.
 
-Rather than designing two unrelated assistants, the project explored:
+### Prototype 1 — First Playable Pocket Alice
 
-**One Alice. Different devices. Shared continuity.**
+The project moved from interface concepts into a working iOS prototype with:
 
-Experiments included local-network discovery, device communication, mobile interface design, voice interaction, and methods for preserving controlled context between environments.
+- Animated Alice orb
+- Home
+- Chat
+- Tools
+- Listening interface
+- Speech output
+- Replaceable `AliceBrain` architecture
 
-Not every networking experiment succeeded.
+### Prototype 2 — Persistent Appearance
 
-Those failures became part of the engineering process rather than being hidden from the project history.
+Alice gained persistent visual themes:
+
+**Pink · Blue · Green · Purple · Gold · Minimal**
+
+The selected appearance persisted between sessions.
+
+### Prototype 3 — Presence & Encrypted Memory
+
+Development expanded into:
+
+- Observe
+- Standby
+- Off
+- Encrypted personal memory
+- Apple Keychain-protected encryption key
+
+### Prototype 4 — Relational Research
+
+Alice's development expanded beyond interface behavior into explicit relational interaction design and behavioral research.
+
+### Prototype 5 — Replaceable On-Device Brain
+
+A preserved implementation added support for Apple's Foundation Models when available, with a limited prototype fallback when unavailable.
+
+### Later Cross-Device Experiments
+
+Development continued into communication between Alice's different environments, including preserved Python server/transport work and peer-to-peer experimentation.
+
+Not every experiment succeeded. Failed approaches and debugging records are treated as part of the development history rather than removed from it.
 
 ---
 
-## 04 — Memory as a System
+## 04 — What I Built
 
-Alice's memory experiments were driven by the relational goal.
+The preserved SwiftUI implementation includes:
 
-Remembering more information was not automatically considered better.
+**Home · Chat · Tools · Listening · Settings · Life Map · Research**
 
-The project instead explored questions such as:
+The prototype also implements:
 
-**What should Alice remember?**
+- Conversational messaging
+- Animated Alice orb
+- Persistent visual themes
+- Voice output
+- Presence modes
+- Encrypted persistence
+- Labeled memory
+- Life Map entries
+- Research instrumentation
+- Research export
+- Replaceable AI brain architecture
 
-**Where should that information live?**
-
-**How should remembered information differ from inference?**
-
-**How can the user correct or suppress something Alice believes about them?**
-
-**What happens to relational continuity when the underlying language model changes?**
-
-This led to experiments with persistent memory, user control, provenance, and separation between the conversational model and the information Alice retained.
+Development also included Python-based server and transport experimentation as Alice expanded beyond a single application environment.
 
 ---
 
-## 05 — Behavioral Testing & AI Evaluation
+## 05 — Relational Interaction
 
-Alice became an environment for systematically testing conversational AI behavior.
+Alice implements five explicit conversational modes.
 
-Testing has included:
+### Reflect
+
+Mirror what is present without deciding what it means.
+
+### Explore
+
+Ask careful questions while keeping multiple explanations possible.
+
+### Rehearse
+
+Practice communicating something clearly without pretending to know what another person thinks.
+
+### Repair
+
+Identify misunderstandings, accept corrections, and try the interaction again.
+
+### Journal
+
+Preserve the person's own words without forcing an interpretation.
+
+These modes explore a larger question:
+
+**Can being known—with uncertainty, consent, correction, and room to change—improve communication between a person and an AI?**
+
+Alice is exploratory and non-diagnostic. The project does not treat conversational behavior as clinical evidence or attempt to replace professional or human relationships.
+
+---
+
+## 06 — Memory With Provenance
+
+One of Alice's central design problems became:
+
+**How should an AI remember without turning every observation or interpretation into a fact?**
+
+The prototype distinguishes between different kinds of memory:
+
+- **User Confirmed**
+- **User Correction**
+- **Alice Observation**
+- **Working Hypothesis**
+
+Memory records can preserve:
+
+- Source
+- Confidence
+- Revision history
+- Active status
+
+This makes correction and uncertainty part of the memory architecture rather than something handled only through prompting.
+
+---
+
+## 07 — Encrypted Personal Continuity
+
+Alice's application-level continuity can include:
+
+- Identity
+- Conversations
+- Labeled memories
+- Life Map entries
+- Research records
+
+The preserved iOS implementation stores this information in an encrypted on-device vault using **AES-GCM encryption**.
+
+A **256-bit encryption key** is protected through Apple Keychain rather than being embedded directly in the project.
+
+The complete personal memory vault does not need to be placed inside the language model's context for Alice to maintain application-level continuity.
+
+---
+
+## 08 — Model-Independent Identity
+
+Alice uses a replaceable `AliceBrain` interface.
+
+The language model generates responses, but it does not have to define the entire Alice system.
+
+Identity, memory architecture, interface, relational modes, research instrumentation, and other application behavior can remain outside the model.
+
+One preserved implementation uses Apple's Foundation Models when available and falls back to a limited prototype brain when the Apple model is unavailable.
+
+This allows experimentation with different underlying models without requiring Alice herself to be rebuilt from scratch.
+
+---
+
+## 09 — Life Map
+
+Alice includes an experimental **Life Map** designed as a living record rather than a truth test.
+
+Entries can preserve:
+
+- A person's current recollection
+- Approximate timing
+- Source
+- Certainty or uncertainty
+- Present meaning
+- Revision lineage
+- An optional marker for something the user may want to discuss with a therapist
+
+A changed date, revised interpretation, uncertain period, or correction does not automatically become evidence that the person was previously dishonest.
+
+---
+
+## 10 — Research Instrumentation
+
+Alice's conversational persona and research instrumentation are intentionally separated.
+
+The Research view can record information about:
+
+- Conversation events
+- Memory events
+- Interaction modes
+- Life Map activity
+- Corrections
+- Brain/model identity
+- Research exports
+
+This makes it possible to inspect what occurred without asking Alice's conversational persona to behave like a research instrument.
+
+Research exports are treated as exploratory records rather than clinical conclusions or population-level evidence.
+
+---
+
+## 11 — Python & Cross-Device Experiments
+
+Alice development was not limited to Swift.
+
+Preserved project materials include Python server and transport-testing code created during experiments involving communication between Alice's different environments.
+
+Cross-device development explored the larger goal of:
+
+> **One Alice across multiple devices rather than separate assistants that merely look alike.**
+
+This area remains experimental and is documented as such.
+
+---
+
+## 12 — AI Testing & Evaluation
+
+Building Alice became an ongoing exercise in evaluating conversational AI behavior.
+
+Testing has focused on:
 
 - Instruction adherence
+- Conversational consistency
 - Context retention
-- Relational continuity
-- Behavioral consistency
 - Memory behavior
 - Unsupported inference
 - Hallucination
-- Personalization boundaries
+- Behavioral differences between iterations
 - Failure reproduction
+- Correction handling
 - Recovery after failures
-- Differences between model and system iterations
 
-A recurring testing process emerged:
+A recurring process emerged:
 
-**Reproduce → Isolate → Test → Compare → Revise → Document**
+> **Reproduce → Isolate → Test → Compare → Revise → Document**
 
-Some of the most useful tests came from conversations where small contextual errors mattered.
-
-A response could be grammatically correct and still fail because it misunderstood the relationship, attributed something incorrectly, lost important context, or became too confident about an inference.
-
-That distinction became an important part of the project.
+Unexpected or unsuccessful behavior became evidence to investigate rather than something to hide.
 
 ---
 
-## 06 — Human-Supervised Adaptation
+## 13 — Design Principles
 
-One research direction that emerged from Alice concerns behavioral improvement.
+### Identity Is Larger Than the Model
 
-Instead of allowing the system to silently convert every interaction into a permanent assumption about the user, the project explores a more deliberate process:
-
-**Observe a repeated friction point → identify a possible behavioral improvement → propose the change → allow human approval or rejection → evaluate the result over time.**
-
-The goal is adaptive communication without giving the system unlimited authority to define the person using it.
-
----
-
-## 07 — Engineering & Research Challenges
-
-Alice has required work across both software development and conversational AI evaluation.
-
-Challenges have included:
-
-- Local-model communication
-- Persistent application state
-- Memory architecture
-- Cross-device connectivity
-- Local-network discovery
-- Conversational consistency
-- Privacy boundaries
-- Permission handling
-- Provenance
-- Failure recovery
-- Distinguishing useful personalization from unsupported inference
-
-The project has been intentionally iterative.
-
-Failed experiments, behavioral regressions, and unexpected model behavior are treated as development evidence rather than discarded results.
-
----
-
-## Design Principles
-
-### Relational Continuity
-Useful context should survive beyond a single isolated conversation when the user wants it to.
-
-### Model-Independent Identity
-Changing the language model should not automatically mean replacing Alice.
+Changing the underlying language model should not automatically erase Alice's identity or application-level continuity.
 
 ### User-Governed Memory
-The user should have meaningful control over what the system retains and uses.
 
-### Adaptation Without Silent Assumptions
-Personalization should not require the system to quietly construct an unquestionable profile of the user.
+The user should have meaningful control over what Alice remembers and how information is classified.
+
+### Uncertainty Matters
+
+An inference, hypothesis, recollection, and confirmed fact should not automatically be treated as the same thing.
+
+### Correction Is Part of the System
+
+Alice should accept corrections rather than manufacture continuity or defend an incorrect interpretation.
 
 ### Permission Before Consequential Actions
-Actions affecting user data, communication, or external systems should respect explicit permission boundaries.
+
+Actions affecting user data, communications, or the surrounding environment should require appropriate permission.
 
 ### Privacy-Conscious Architecture
-Local processing and controlled information sharing are important architectural considerations.
+
+Local processing, encrypted persistence, bounded context sharing, and controlled export are important architectural considerations.
 
 ### Additive Development
-New capabilities should extend working systems without unnecessarily destroying previously functioning behavior.
+
+New capabilities should extend working behavior without unnecessarily destroying what already works.
 
 ---
 
-## Technologies & Tools
+## 14 — Technologies & Tools
 
 - Swift
 - SwiftUI
+- Python
 - Xcode
 - AVFoundation
-- CloudKit
+- CryptoKit
+- Apple Keychain / Security
+- Apple Foundation Models
+- CloudKit experimentation
 - LM Studio
 - Local language models
-- Python experimentation
+- Git / GitHub
 
 ---
 
-## Current Status
+## 15 — What I Learned
 
-**Active prototype / ongoing independent project**
-
-This repository is intentionally a **sanitized public case study**.
-
-Private conversations, credentials, personal memory contents, sensitive implementation details, and private research are excluded.
-
-The project materials published here will distinguish between:
-
-- Original concept artwork
-- Working prototype screenshots
-- Implemented functionality
-- Experimental functionality
-- Planned concepts
-
-That distinction is important to accurately documenting Alice's development.
-
----
-
-## What Alice Taught Me
-
-Building Alice has given me hands-on experience with both software development and applied AI evaluation, including:
+Alice has given me hands-on experience with:
 
 - Conversational AI behavior
 - Prompt engineering
-- Model evaluation
+- AI evaluation
 - Behavioral testing
-- Software debugging
+- Debugging
+- Failure reproduction
+- SwiftUI development
+- Python experimentation
 - Persistent application state
 - Memory-system design
 - Local language models
 - Cross-device architecture
 - Privacy and permission boundaries
-- Human-supervised personalization
-- Iterative development and failure analysis
+- Technical documentation
+- Iterative software development
+
+Most importantly, the project taught me to treat unexpected AI behavior as something that can be **reproduced, examined, compared, and documented** rather than simply accepted as unpredictable.
 
 ---
 
-## The Continuing Question
+## 16 — Evidence in This Repository
 
-Alice continues to explore a question that became larger than the original prototype:
+This repository is being built as a **sanitized technical case study**, not simply a project description.
 
-**Can a conversational AI maintain meaningful relational continuity while still allowing the person using it to control what it remembers, how it adapts, and which underlying intelligence powers it?**
+Evidence added here will include selected materials such as:
 
-That is the problem Alice is being built to investigate.
+- Sanitized Swift source
+- Sanitized Python source
+- Original design assets
+- Working-prototype screenshots
+- Architecture documentation
+- Development records
+- Debugging and evaluation case studies
+
+Historical concept artwork, working implementations, experimental code, and later documentation will remain clearly labeled so that the provenance of each artifact is preserved.
+
+---
+
+## 17 — Current Status
+
+**Active prototype / ongoing independent project**
+
+Alice is not presented here as a finished commercial product.
+
+Some components are functional prototypes, some are experiments, and some remain research or design directions.
+
+This public repository intentionally excludes:
+
+- Private conversations
+- Personal memory contents
+- Credentials or API keys
+- Encryption keys
+- Sensitive research records
+- Private user information
+
+---
+
+## Project Philosophy
+
+Alice ultimately explores a larger idea:
+
+**A conversational AI can change its underlying technology without necessarily losing the identity, memory architecture, permissions, relational framework, and continuity designed around it.**
+
+And knowing someone over time should not require pretending to know more than the evidence actually supports.
 
 ---
 
