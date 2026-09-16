@@ -114,9 +114,9 @@ These early visuals are preserved as **concept designs** and are intentionally d
 
 ### Original Alice Concept
 
-*Original concept artwork will be displayed here.*
+![Original Alice relational AI interface concept](04ABCDA7-71C1-455B-8501-E6E7B297782F.png)
 
----
+*Original Alice concept artwork — early visual exploration of Alice's neural presence, conversational interface, tools, voice interaction, customizable themes, and cross-device identity.*
 
 ## 02 — From Concept to Working Prototype
 
